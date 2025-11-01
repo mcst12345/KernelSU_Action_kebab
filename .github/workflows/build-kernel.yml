@@ -151,6 +151,11 @@ jobs:
         cd $GITHUB_WORKSPACE/kernel_workspace
         git clone https://android.googlesource.com/platform/system/tools/mkbootimg tools -b master-kernel-build-2022 --depth=1
 
+    - name: Debug
+      run: |
+        cd $GITHUB_WORKSPACE/kernel_workspace
+        clang --version
+
     - name: Download kernel source
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
