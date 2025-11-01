@@ -155,6 +155,9 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
         export PATH=$GITHUB_WORKSPACE/kernel_workspace/clang-aosp/bin:$PATH
+        echo $PATH
+        ls clang-aosp/bin
+        ./clang-aosp/bin/clang --version
         clang --version
         whereis clang
         whereis gcc
