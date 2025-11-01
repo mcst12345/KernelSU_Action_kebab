@@ -71,7 +71,7 @@ jobs:
         cd $GITHUB_WORKSPACE/kernel_workspace
         mkdir clang-aosp
         wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2022.tar.gz
-        tar -C clang-aosp/ -zxvf master-kernel-build-2022.tar.gz
+        tar -C clang-aosp/ -zxvf linux-x86-refs_heads_master-kernel-build-2022.tar.gz
 
     - name: Download Custom-Clang
       if: env.USE_CUSTOM_CLANG == 'true'
